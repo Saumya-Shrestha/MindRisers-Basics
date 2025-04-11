@@ -1,0 +1,26 @@
+span {
+  color: cyan;
+}
+
+#click {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+  padding: 10px 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fruits {
+  list-style: none;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.animals {
+  list-style: none;
+}
