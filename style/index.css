@@ -2,13 +2,28 @@ span {
   color: cyan;
 }
 
-#click {
+.click {
   background-color: #4caf50;
   border: 2px solid #4caf50;
   padding: 10px 15px;
   color: #ffffff;
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+.click-to-youtube {
+  background: transparent;
+  border: 2px solid #4caf50;
+  padding: 10px 15px;
+  color: #4caf50;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.click-to-youtube:hover {
+  background: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 a {
