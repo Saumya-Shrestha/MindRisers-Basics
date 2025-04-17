@@ -8,6 +8,15 @@
     />
     <title>My First Project</title>
 
+    <!--* Font Awesome Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!--* CSS Link -->
     <link
       rel="stylesheet"
@@ -133,21 +142,34 @@
       <div class="container-fluid">
         <div class="header-content">
           <img
+            class="logo"
             src="./assets/logo.png"
             alt="Logo Image"
             height="60px"
             width="60px"
           />
           <ul class="list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Blogs</li>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="blog">Blog</a></li>
           </ul>
           <div>
-            <button class="btn btn-primary">Send Inquiry</button>
+            <button class="btn btn-light">Send Inquiry</button>
           </div>
+          <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="dropdown_menu">
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><button class="btn btn-primary">Send Inquiry</button></li>
         </div>
       </div>
     </nav>
