@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -52,8 +54,9 @@ span {
   padding: 80px 0px;
 }
 
-.card {
-  margin-bottom: 20px;
+.xyz {
+  padding: 20px;
+  background: #ffffff;
 }
 
 .header-content {
@@ -70,7 +73,7 @@ span {
   margin-right: 15px;
 }
 
-a {
+.list a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
@@ -81,7 +84,11 @@ a:hover {
 }
 
 nav {
-  background: black;
+  background: rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
