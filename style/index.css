@@ -107,6 +107,20 @@ nav {
   display: none;
 }
 
+.section-two {
+  background: #ffffff;
+  padding: 80px 0px;
+}
+
+.contact-image {
+  width: 100%;
+}
+
+.contact-us {
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (max-width: 800px) {
   .header-content .list,
   .header-content .btn {

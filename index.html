@@ -8,6 +8,12 @@
     />
     <title>My First Project</title>
 
+    <!--* CSS Link -->
+    <link
+      rel="stylesheet"
+      href="./style/index.css"
+    />
+
     <!--* Font Awesome Link-->
     <link
       rel="stylesheet"
@@ -15,12 +21,6 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-
-    <!--* CSS Link -->
-    <link
-      rel="stylesheet"
-      href="./style/index.css"
     />
 
     <!--* Bootstrap Link -->
@@ -44,7 +44,9 @@
             width="60px"
           />
           <ul class="list">
-            <li><a href="home">Home</a></li>
+            <li>
+              <a href="home"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
             <li><a href="./about.html">About</a></li>
             <li><a href="services">Services</a></li>
             <li><a href="contact">Contact</a></li>
@@ -161,7 +163,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="xyz">
+            <!-- <div class="xyz">
               <img
                 class="img-fluid"
                 src="./assets/f1.jpeg"
@@ -176,7 +178,46 @@
               </p>
               <button class="btn btn-primary">Add To Cart</button>
             </div>
+          </div> -->
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="xyz">
+                  <img
+                    class="img-fluid"
+                    src="./assets/f1.jpeg"
+                    alt="Burger"
+                  />
+                  <h2>Heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque adipisci nam mollitia, provident, quos nobis optio
+                    consequuntur ex placeat eius aliquid autem. Maxime fugiat,
+                    deserunt autem quas iste non dolorum?
+                  </p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="xyz">
+                  <img
+                    class="img-fluid"
+                    src="./assets/f1.jpeg"
+                    alt="Burger"
+                  />
+                  <h2>Heading</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Neque adipisci nam mollitia, provident, quos nobis optio
+                    consequuntur ex placeat eius aliquid autem. Maxime fugiat,
+                    deserunt autem quas iste non dolorum?
+                  </p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="col-md-6">
             <div class="xyz">
               <img
@@ -232,7 +273,7 @@
       </div>
     </section>
 
-    <div class="container">
+    <!-- <div class="container">
       <h2>We are Chaitra Group!</h2>
     </div>
 
@@ -290,7 +331,146 @@
         height="300px"
         width="400px"
       />
-    </div>
+    </div> -->
+
+    <h1 class="contact-us">Contact Us</h1>
+    <section class="section-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  aria-describedby="nameHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  aria-describedby="emailHelp"
+                />
+                <div
+                  id="emailHelp"
+                  class="form-text"
+                >
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your phone number"
+                  aria-describedby="phoneHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter your password"
+                  aria-describedby="passwordHelp"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label
+                  class="form-check-label"
+                  for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="contact-image"
+              src="./assets/bulldog.png"
+              alt="dog image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>
+              <img
+                class="logo"
+                src="./assets/logo.png"
+                alt="Logo Image"
+                height="60px"
+                width="60px"
+              />Penn State Extension
+            </h3>
+            <h5>College of Agricultral Science</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Aspernatur quibusdam laboriosam quas quisquam ea, praesentium rem
+              cupiditate?
+            </p>
+          </div>
+          <div class="col-md-3">
+            About Extension
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            Customer Service
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            Other Programs
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-4">abcd</div>
+            <div class="col-md-4">abcd</div>
+            <div class="col-md-4">abcd</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--* JavaScript Link -->
     <script src="./js/index.js"></script>
