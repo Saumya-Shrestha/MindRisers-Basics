@@ -50,7 +50,7 @@ span {
 }
 
 .one {
-  background: #4caf50;
+  background: #1f212e;
   padding: 80px 0px;
 }
 
@@ -84,7 +84,7 @@ a:hover {
 }
 
 nav {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgb(31, 33, 46);
   position: fixed;
   top: 0;
   width: 100%;
@@ -109,7 +109,7 @@ nav {
 
 .section-two {
   background: #ffffff;
-  padding: 80px 0px;
+  padding: 40px 0px;
 }
 
 .contact-image {
@@ -119,6 +119,51 @@ nav {
 .contact-us {
   text-align: center;
   margin-top: 20px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: white;
+  background: #1f212e;
+}
+
+.footer ul {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.footer li {
+  margin-left: -32px;
+}
+
+.footer .logo {
+  margin-left: -10px;
+}
+
+.copyright {
+  padding: 10px 0px;
+  color: white;
+  background: #2d3147;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.footer-header {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.logo-header {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.socials {
+  color: white;
+  font-size: 2rem;
+}
+
+.socials i {
+  margin-right: 10px;
 }
 
 @media (max-width: 800px) {
