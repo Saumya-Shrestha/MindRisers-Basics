@@ -117,7 +117,10 @@ nav {
 }
 
 .contact-us {
+  color: #1f212e;
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
   margin-top: 20px;
 }
 
@@ -164,6 +167,9 @@ nav {
 
 .socials i {
   margin-right: 10px;
+}
+.list a i {
+  color: #ffca2c;
 }
 
 @media (max-width: 800px) {
