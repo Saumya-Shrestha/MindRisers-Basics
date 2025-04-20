@@ -56,7 +56,9 @@ span {
 
 .xyz {
   padding: 20px;
+  margin: 10px;
   background: #ffffff;
+  width: 100%;
 }
 
 .header-content {
