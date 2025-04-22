@@ -240,6 +240,9 @@ nav {
   position: absolute;
 }
 
+.map {
+  padding: 80px 0px;
+}
 @media (max-width: 800px) {
   .header-content .list,
   .header-content .btn {
@@ -252,5 +255,28 @@ nav {
 
   .dropdown_menu {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 920px) {
+  .xyz1 {
+    margin-top: 50px;
+  }
+  .hero-section-text {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  span {
+    color: coral;
+  }
+
+  .fruits {
+    display: none;
+  }
+  .xyz1 {
+    margin-top: inherit;
   }
 }
