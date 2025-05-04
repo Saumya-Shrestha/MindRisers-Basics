@@ -4,6 +4,9 @@
 // }
 
 // let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let even = [];
+// let odd = [];
+
 // console.log(num.length);
 // console.log(num.indexOf(10));
 
@@ -12,9 +15,6 @@
 
 // fruits.push("orange");
 // console.log(fruits);
-
-// let even = [];
-// let odd = [];
 
 // for (let j = 0; j < num.length; j++) {
 //   const x = num[j];
@@ -38,7 +38,7 @@
 // unshift;
 // let numbers = [20, 30, 40];
 // let newNumber = numbers.unshift(10);
-// console.log(newNumber;
+// console.log(newNumber);
 // console.log(numbers);
 
 // splice;
@@ -59,13 +59,49 @@
 
 // findIndex;
 // let numbers = [4, 9, 16, 25];
-// let index = numbers.findIndex(num => num > 10);
+// let index = numbers.findIndex((num) => num > 10);
 // console.log(index);
 
 // includes;
-let fruits = ["apple", "banana", "cherry"];
-let hasBanana = fruits.includes("banana");
-console.log(hasBanana);
+// let fruits = ["apple", "banana", "cherry"];
+// let hasBanana = fruits.includes("banana");
+// console.log(hasBanana);
 
-let hasMango = fruits.includes("mango");
-console.log(hasMango);
+// let hasMango = fruits.includes("mango");
+// console.log(hasMango);
+
+let students = [
+  {
+    name: "John",
+    course: "MERN-Stack",
+    grade: 90,
+  },
+  {
+    name: "Bishnu",
+    course: "Python",
+    grade: 50,
+  },
+  {
+    name: "Ram",
+    course: "Data Science",
+    grade: 60,
+  },
+  {
+    name: "Niaz",
+    course: "Digital Marketing",
+    grade: 70,
+  },
+];
+
+students.map((name) => {
+  console.log(name.course);
+});
+
+students.forEach((name) => {
+  console.log(name.course);
+});
+
+for (let i = 0; i < students.length; i++) {
+  const element = students[i];
+  console.log(element.course);
+}
