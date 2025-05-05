@@ -44,25 +44,21 @@ let odd = [];
 // });
 // console.log(filterNumArr);
 
-//  Using forEach for multiplication table of 3
 console.log("Multiplication table of 3 using forEach:");
 num.forEach((num) => {
   console.log(`3 × ${num} = ${3 * num}`);
 });
 
-//  Using map for multiplication table of 3
-console.log("Multiplication table of 3 using map:");
-num.map((num) => {
-  console.log(`3 × ${num} = ${3 * num}`);
-});
-
-//  Using forEach for multiplication table of 4
 console.log("Multiplication table of 4 using forEach:");
 num.forEach((num) => {
   console.log(`4 × ${num} = ${4 * num}`);
 });
 
-//  Using map for multiplication table of 4
+console.log("Multiplication table of 3 using map:");
+num.map((num) => {
+  console.log(`3 × ${num} = ${3 * num}`);
+});
+
 console.log("Multiplication table of 4 using map:");
 num.map((num) => {
   console.log(`4 × ${num} = ${4 * num}`);
