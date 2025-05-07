@@ -81,4 +81,4 @@ const cartItems1 = [
 ];
 
 const total = cartItems1.reduce((acc, item) => acc + item.price, 0);
-console.log(`Total Price of cartItems1 is Rs.${total}.`);
+console.log(`Total Price of items in cart is Rs.${total}.`);
