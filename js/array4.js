@@ -98,7 +98,7 @@ const countries = [
 ];
 
 const getCountryCode = (countryName) => {
-  let country = countries.find((item) => item.name.toLowerCase() === countryName.toLowerCase());
+  let country = countries.find((item) => item.name.toLowerCase() === countryName.trim().toLowerCase());
   if (country) {
     return country.code;
   } else {
@@ -106,4 +106,100 @@ const getCountryCode = (countryName) => {
   }
 };
 
-console.log(getCountryCode("Nepal"));
+// console.log(getCountryCode("Nepal "));
+
+let User = [
+  {
+    name: "Sanjaya",
+    age: 25,
+    email: "sanjaya@gmail.com",
+    password: "sanjaya123",
+  },
+  {
+    name: "Shyam",
+    age: 25,
+    email: "shyam@gmail.com",
+    password: "shyam123",
+  },
+  {
+    name: "Santosh",
+    age: 25,
+    email: "santosh@gmail.com",
+    password: "santosh123",
+  },
+  "Ajaya",
+  "Bijaya",
+  "Sita",
+  "Gita",
+  "Rita",
+];
+
+// let registeredUser = User.includes("Sanjaya");
+// if (registeredUser) {
+//   console.log("You are a registered user.");
+// } else {
+//   console.log("You are not a registered user.");
+// }
+
+const isUserRegistered = (username) => {
+  let user = User.find((u) => u.toLowerCase() === username.trim().toLowerCase());
+  if (user) {
+    return "User is already registered.";
+  } else {
+    return "User is not registered.";
+  }
+};
+
+// console.log(isUserRegistered("Shyam"));
+
+const findUserEmail = (username) => {
+  let user = User.find((u) => u.name.toLowerCase() === username.trim().toLowerCase());
+  if (user) {
+    return user.email;
+  } else {
+    return "User not found";
+  }
+};
+
+// console.log(findUserEmail("Santosh"));
+
+const product = [
+  {
+    title: "Laptop",
+    price: 4000,
+    quantity: 10,
+  },
+  {
+    title: "Mobile",
+    price: 3000,
+    quantity: 20,
+  },
+  {
+    title: "Watch",
+    price: 2000,
+    quantity: 30,
+  },
+  {
+    title: "Wallet",
+    price: 1000,
+    quantity: 30,
+  },
+];
+
+const findProduct = () => {
+  return product.filter((item) => item.price < 4000).map((item) => item.title);
+};
+
+console.log(findProduct());
+
+// const findProduct = () => {
+//   const results = [];
+//   product.map((item) => {
+//     if (item.price < 4000) {
+//       results.push(item.title);
+//     }
+//   });
+//   return results;
+// };
+
+// console.log(findProduct());
