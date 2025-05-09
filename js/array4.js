@@ -186,16 +186,16 @@ const product = [
   },
 ];
 
-const findProduct = () => {
-  return product.filter((item) => item.price < 4000).map((item) => item.title);
-};
+// const findProduct = () => {
+//   return product.filter((item) => item.price < 3000).map((item) => item.title);
+// };
 
-console.log(findProduct());
+// console.log(findProduct());
 
 // const findProduct = () => {
 //   const results = [];
 //   product.map((item) => {
-//     if (item.price < 4000) {
+//     if (item.price < 3000) {
 //       results.push(item.title);
 //     }
 //   });
@@ -203,3 +203,43 @@ console.log(findProduct());
 // };
 
 // console.log(findProduct());
+
+const findProduct = (price) => {
+  const newProduct = product.find((item) => {
+    return item.price === price;
+  });
+  if (newProduct) {
+    console.log(`"Yes theres is product."`);
+  } else {
+    console.log("Not available");
+  }
+};
+
+findProduct(3000);
+
+// const sentence = "I am a software developer.";
+// const words = sentence.split(" ");
+// const totalWord = words.length;
+// console.log(totalWord);
+
+let user = {
+  name: "Sanjaya",
+  age: 25,
+  email: "sanjaya@gmail.com",
+  password: "sanjaya123",
+};
+let name1 = user.name;
+console.log(name1);
+
+let stringUser = JSON.stringify(user);
+console.log(stringUser);
+
+//* To access the name of stringUser
+const name2 = stringUser.name;
+console.log(name2);
+
+let parsedUser = JSON.parse(stringUser);
+console.log(parsedUser);
+
+const name3 = parsedUser.name;
+console.log(name3);
