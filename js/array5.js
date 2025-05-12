@@ -93,4 +93,29 @@ const registeredUser = (name) => {
   }
 };
 
-registeredUser("Ramesh");
+// registeredUser("Ramesh");
+
+let accountNumber = "123456789123565678";
+
+function maskedAccNumber(accountNumber) {
+  let lastFourDigits = accountNumber.slice(-4);
+  let maskedSection = "*".repeat(accountNumber.length - 4);
+  return maskedSection + lastFourDigits;
+}
+
+// console.log(maskedAccNumber(accountNumber));
+
+let phoneNumber = 9840000000;
+
+function maskedPhoneNumber(phoneNumber) {
+  let lastFourDigits = phoneNumber.toString().slice(-4);
+  let maskedSection = "*".repeat(phoneNumber.toString().length - 4);
+  return maskedSection + lastFourDigits;
+}
+
+// console.log(maskedPhoneNumber(phoneNumber));
+
+//* Fetch User
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log("This is response from real api:", json));
